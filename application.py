@@ -5,6 +5,8 @@ app = Flask(__name__)
 def hello():
     return "Hello World!"
 
+@app.route("/index")
 @app.route("/index.html")
 def index():
     return "Hello World!"
+
